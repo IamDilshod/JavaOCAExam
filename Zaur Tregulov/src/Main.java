@@ -1,16 +1,22 @@
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
 
 public class Main {
-	public static void main(String[] args) throws Exception {
-		File file = new File("d:\\JavaOCAExam\\test.txt");
-		FileInputStream fis = new FileInputStream(file);
-		fis.read();
-		FileOutputStream fos = new FileOutputStream(file);
-		fos.write(100);
+	public static void main(String[] args) {
+		File file = new File("d:\\JavaOCAExam\\test9999.txt");
 
-		fis.close();
-		fos.close();
+		catch (FileNotFoundException e) {
+			System.out.println("Exception catched!!!");
+		} 
+		try {
+			FileInputStream fis = new FileInputStream(file);
+			System.out.println("Hello 1");
+		}
+		finally {
+			System.out.println("Finally block");
+		}
+
+		System.out.println("Hello 2");
 	}
 }
