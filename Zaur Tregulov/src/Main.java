@@ -3,20 +3,16 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class Main {
-	public static void main(String[] args) {
+	public void foo() throws FileNotFoundException {
 		File file = new File("d:\\JavaOCAExam\\test9999.txt");
+		FileInputStream fis = new FileInputStream(file);
+	}
 
-		catch (FileNotFoundException e) {
-			System.out.println("Exception catched!!!");
-		} 
-		try {
-			FileInputStream fis = new FileInputStream(file);
-			System.out.println("Hello 1");
-		}
-		finally {
-			System.out.println("Finally block");
-		}
+	public void bar() throws Throwable {
+		foo();
+	}
 
-		System.out.println("Hello 2");
+	public static void main(String[] args) {
+
 	}
 }
