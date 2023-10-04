@@ -1,36 +1,37 @@
 package p4;
 
 public class Hello {
-	int a;
-	String str;
+
 }
 
-class Q {
+class Student {
 	int id;
 	int age;
+	int course;
 	String name;
-	double salary;
+	String surname;
 
-	Q(int id) {
-		this(id, 0, null, 0);
+	public Student(int id2, int age2, int course2, String name2, String surname2) {
+		id = id2;
+		age = age2;
+		course = course2;
+		name = name2;
+		surname = surname2;
 	}
 
-	Q(int id, int age) {
-		this(id, age, null, 0);
+	public Student(int id2, String name2, String surname2, int course2) {
+		id = id2;
+		course = course2;
+		name = name2;
+		surname = surname2;
 	}
 
-	Q(int id, int age, String name) {
-		this(id, age, name, 0);
-	}
-
-	Q(int id, int age, String name, double salary) {
-		this.id = id;
-		this.age = age;
-		this.name = name;
-		this.salary = salary;
+	public Student() {
 	}
 
 	public static void main(String[] args) {
-
+		Student alexStudent = new Student();
+		Student johnStudent = new Student(34, "John", "Ashley", 3);
+		Student fernandStudent = new Student(22, 27, 1, "Fernand", "George");
 	}
 }
