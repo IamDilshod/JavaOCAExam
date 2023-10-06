@@ -2,10 +2,10 @@ package P3;
 
 public class B {
 	public static void main(String[] args) {
-		System.out.println("B");
-	}
+		char c = 122;
+		System.out.println(c);
+		System.out.println('\u007A');
 
-	public void foo() {
-		System.out.println("foo method");
+		char r = -122;
 	}
 }
