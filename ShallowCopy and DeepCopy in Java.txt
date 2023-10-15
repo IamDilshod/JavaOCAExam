@@ -1,0 +1,11 @@
+https://howtodoinjava.com/tag/java-cloning/
+
+https://howtodoinjava.com/java/collections/hashmap/shallow-deep-copy-hashmap/
+
+https://howtodoinjava.com/java/collections/arraylist/arraylist-clone-deep-copy/
+
+https://howtodoinjava.com/java/array/java-array-clone-shallow-copy/
+
+https://howtodoinjava.com/java/serialization/how-to-do-deep-cloning-using-in-memory-serialization-in-java/
+
+https://howtodoinjava.com/java/cloning/a-guide-to-object-cloning-in-java/
